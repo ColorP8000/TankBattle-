@@ -246,7 +246,9 @@ function spawnEnemy() {
     if (gameState.enemies.length >= CONFIG.MAX_ENEMIES) return;
 
     const x = Math.random() * (CONFIG.CANVAS_WIDTH - CONFIG.ENEMY_SIZE);
-    const enemy = new Tank(x, -CONFIG.ENEMY_SIZE, false);
+    // 敌人生成在画布内部，而不是外部
+    const y = CONFIG.ENEMY_SIZE; // 从画布顶部开始生成
+    const enemy = new Tank(x, y, false);
     gameState.enemies.push(enemy);
 }
 
