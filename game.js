@@ -38,12 +38,12 @@ class Tank {
         this.width = isPlayer ? CONFIG.PLAYER_SIZE : CONFIG.ENEMY_SIZE;
         this.height = this.width;
         this.speed = isPlayer ? CONFIG.PLAYER_SPEED : CONFIG.ENEMY_SPEED;
-        this.direction = 'up'; // up, down, left, right
+        this.direction = isPlayer ? 'up' : 'down'; // 玩家向上，敌人向下
         this.isPlayer = isPlayer;
         this.color = isPlayer ? '#4a9eff' : '#ff4444';
         this.lastShot = 0;
         this.moveTimer = 0;
-        this.moveDirection = 'up';
+        this.moveDirection = isPlayer ? 'up' : 'down'; // 初始移动方向
     }
 
     draw(ctx) {
