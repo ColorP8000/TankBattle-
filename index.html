@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>坦克大战</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <div class="header">
+            <h1>🎮 坦克大战</h1>
+            <div class="score-board">
+                <div class="score-item">
+                    <span class="score-label">玩家得分:</span>
+                    <span id="player-score">0</span>
+                </div>
+                <div class="score-item">
+                    <span class="score-label">剩余生命:</span>
+                    <span id="player-lives">3</span>
+                </div>
+            </div>
+        </div>
+        <canvas id="gameCanvas"></canvas>
+        <div class="controls-info">
+            <div class="control-group">
+                <h3>🕹️ 操作说明</h3>
+                <p><kbd>W</kbd> <kbd>A</kbd> <kbd>S</kbd> <kbd>D</kbd> 或 <kbd>↑</kbd> <kbd>←</kbd> <kbd>↓</kbd> <kbd>→</kbd> - 移动坦克</p>
+                <p><kbd>空格</kbd> - 发射子弹</p>
+                <p><kbd>P</kbd> - 暂停/继续</p>
+                <p><kbd>R</kbd> - 重新开始</p>
+            </div>
+            <div class="control-group">
+                <h3>🎯 游戏目标</h3>
+                <p>消灭敌方坦克，保护自己的基地</p>
+                <p>击中敌方坦克 +100 分</p>
+            </div>
+        </div>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html>

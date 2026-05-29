@@ -1,0 +1,29 @@
+# Operating System Files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor Files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Claude Code
+.claude/
+
+# Build Files
+dist/
+build/
+*.min.js
+*.min.css
+
+# Log Files
+*.log
+npm-debug.log*
+
+# Temporary Files
+*.tmp
+temp/
+tmp/
